@@ -1,0 +1,48 @@
+server:
+  port: 7780
+spring:
+  datasource:
+    password: Temp1234
+    url: jdbc:mysql://localhost:3306/javabatch
+    username: root
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQL5Dialect
+  application:
+    name: coupon-service-app
+    
+    
+    
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultzone: http://localhost:7780/eureka
+        
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - "*"
+      base-path: /myactuator
+      
+      
+  info:
+    env:
+      enabled: true
+      
+  
+logging:
+  level:
+    com:
+     zensar: debug
+     
+     
+     
