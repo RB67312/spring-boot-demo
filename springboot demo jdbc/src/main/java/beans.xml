@@ -13,7 +13,7 @@
 		<property name="url"
 			value="jdbc:mysql://localhost:3306/jdbcdb"></property>
 		<property name="username" value="root"></property>
-		<property name="password" value="Ambika@91"></property>
+		<property name="password" value="Temp1234"></property>
 	</bean>
 
 	<bean id="jdbcTemplateObject"
