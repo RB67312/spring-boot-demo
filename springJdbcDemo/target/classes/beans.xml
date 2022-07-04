@@ -11,7 +11,7 @@
 	<bean id="dataSource1"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
 		<property name="url"
-			value="jdbc:mysql://localhost:3306/jdbcdb"></property>
+			value="jdbc:mysql://localhost:7780/jdbcdb"></property>
 		<property name="username" value="root"></property>
 		<property name="password" value="Temp1234"></property>
 	</bean>

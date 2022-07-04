@@ -8,11 +8,9 @@ import com.zensar.repository.StudentRepositoryImpl;
 
 public class SpringJdbcMain {
 
-	private static ApplicationContext context;
-
 	public static void main(String[] args) {
 
-		context = new ClassPathXmlApplicationContext("beans.xml");
+		ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
 		System.out.println("Application context loaded");
 		StudentRepositoryImpl studentRepositoryImpl = context.getBean("studentRepository", StudentRepositoryImpl.class);
 
